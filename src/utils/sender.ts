@@ -7,7 +7,7 @@ export const sendMessage = async (channelID: string, content: string) => {
 
     const response = await fetch(`${basicURL}/channels/${channelID}/messages`, {
 
-        method: 'GET', 
+        method: 'POST', 
 
         headers: {
             'Content-Type': 'application/json',
